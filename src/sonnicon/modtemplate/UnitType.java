@@ -41,3 +41,4 @@ public class UnitType extends UnlockableContent{
     public TextureRegion baseRegion, legRegion, region, shadowRegion, cellRegion,
         softShadowRegion, jointRegion, footRegion, legBaseRegion, baseJointRegion, ringRegion, ringEndRegion, clawRegion, outlineRegion;
     public TextureRegion[] wreckRegions;
+}
