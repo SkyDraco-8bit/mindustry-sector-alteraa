@@ -1,11 +1,11 @@
 {
-  "name": "modtemplate",
-  "displayName": "Template",
-  "author": "[#8738ff[]]Sonnicon[[]]",
-  "description": "Gradle jar Mindustry mod template",
+  "name": "alteraa",
+  "displayName": "Sector Alteraa",
+  "author": "[#8738ff[]]SkyDraco[[]]",
+  "description": "A new sector for campaign",
   "version": "0",
-  "main": "sonnicon.modtemplate.ModTemplate",
-  "minGameVersion": "105",
+  "main": "rok.alteraa.ModTemplate",
+  "minGameVersion": "125",
   "dependencies": [],
   "hidden": false,
   "java": true
