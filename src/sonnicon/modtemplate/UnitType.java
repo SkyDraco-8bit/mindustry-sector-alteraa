@@ -36,7 +36,7 @@ import static mindustry.Vars.*;
 
 @Override
 public class UnitType extends UnlockableContent{
-    public int ringCount = 8, 
+    public int ringCount = 8
     public float wormLength = 10, wormBalancement = 0.5f, ringBalancement = 0.1f
     public TextureRegion baseRegion, legRegion, region, shadowRegion, cellRegion,
         softShadowRegion, jointRegion, footRegion, legBaseRegion, baseJointRegion, ringRegion, ringEndRegion, clawRegion, outlineRegion;
