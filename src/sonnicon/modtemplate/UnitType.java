@@ -1,3 +1,5 @@
+package exdustry.content
+
 import mindustry.type.*;
 import arc.*;
 import arc.audio.*;
