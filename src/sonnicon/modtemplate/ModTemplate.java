@@ -1,4 +1,4 @@
-package sonnicon.modtemplate;
+package ;
 
 import mindustry.mod.Mod;
 
