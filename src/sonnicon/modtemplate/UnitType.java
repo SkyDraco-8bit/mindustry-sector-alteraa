@@ -1,4 +1,4 @@
-ackage mindustry.type;
+package mindustry.type;
 
 import arc.*;
 import arc.audio.*;
