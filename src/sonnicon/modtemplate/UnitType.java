@@ -1,5 +1,4 @@
-package mindustry.type;
-
+import mindustry.type.*;
 import arc.*;
 import arc.audio.*;
 import arc.func.*;
