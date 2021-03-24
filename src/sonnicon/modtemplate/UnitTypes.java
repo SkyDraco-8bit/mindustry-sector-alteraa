@@ -79,3 +79,5 @@ public class UnitTypes implements ContentList{
             health = 140;
             
         }};
+    }
+}
