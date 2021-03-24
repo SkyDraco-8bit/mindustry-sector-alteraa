@@ -67,3 +67,15 @@ public class UnitTypes implements ContentList{
     public static @EntityDef({Unitc.class, BlockUnitc.class}) UnitType block;
 
     //endregion
+    
+    
+    @Override
+    public void load(){
+        //region ground attack
+
+        testWorm = new UnitType("test-worm"){{
+            speed = 0.5f;
+            hitSize = 8f;
+            health = 140;
+            
+        }};
