@@ -42,4 +42,31 @@ public class UnitType extends UnlockableContent{
     public TextureRegion baseRegion, legRegion, region, shadowRegion, cellRegion,
         softShadowRegion, jointRegion, footRegion, legBaseRegion, baseJointRegion, ringRegion, ringEndRegion, clawRegion, outlineRegion;
     public TextureRegion[] wreckRegions;
+    
+    @CallSuper
+    @Override
+    public void load(){
+        weapons.each(Weapon::load);
+        region = Core.atlas.find(name);
+        legRegion = Core.atlas.find(name + "-leg");
+        jointRegion = Core.atlas.find(name + "-joint");
+        baseJointRegion = Core.atlas.find(name + "-joint-base");
+        footRegion = Core.atlas.find(name + "-foot");
+        legBaseRegion = Core.atlas.find(name + "-leg-base", name + "-leg");
+        baseRegion = Core.atlas.find(name + "-base");
+        ringRegion = Core.atlas.find(name + "-ring");
+        ringEndRegion = Core.atlas.find(name + "-ring-end");
+        
+        cellRegion = Core.atlas.find(name + "-cell", Core.atlas.find("power-cell"));
+        softShadowRegion = Core.atlas.find("circle-shadow");
+        outlineRegion = Core.atlas.find(name + "-outline");
+        shadowRegion = icon(Cicon.full);
+        
+
+        wreckRegions = new TextureRegion[3];
+        for(int i = 0; i < wreckRegions.length; i++){
+            wreckRegions[i] = Core.atlas.find(name + "-wreck" + i);
+        }
+    }
+
 }
