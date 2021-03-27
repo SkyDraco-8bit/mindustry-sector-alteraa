@@ -1,6 +1,7 @@
 
 package alteraa.content;
 
+import mindustry.content.*;
 import arc.graphics.*;
 import arc.struct.*;
 import mindustry.ai.types.*;

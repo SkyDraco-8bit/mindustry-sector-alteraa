@@ -1,5 +1,6 @@
 package alteraa.type;
 
+import mindustry.content.*;
 import mindustry.type.*;
 import arc.*;
 import arc.audio.*;
@@ -36,6 +37,7 @@ import mindustry.world.meta.values.*;
 import static mindustry.Vars.*;
 
 import alteraa.content.*;
+import alteraa.entities.*;
 
 @Override
 public class AlteraaUnitType extends UnitType{
@@ -68,15 +70,6 @@ public class AlteraaUnitType extends UnitType{
 
         balise() = new balise[baliseNumber]
 
-        Draw.reset();
-
-        float e = unit.elevation;
-
-        float sin = Mathf.lerp(Mathf.sin(mech.walkExtend(true), 2f / Mathf.PI, 1f), 0f, e);
-        float extension = Mathf.lerp(mech.walkExtend(false), 0, e);
-        float boostTrns = e * 2f;
-
-        Floor floor = unit.isFlying() ? Blocks.air.asFloor() : unit.floorOn();
 
         if(floor.isLiquid){
             Draw.color(Color.white, floor.mapColor, 0.5f);
