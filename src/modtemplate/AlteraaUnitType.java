@@ -41,7 +41,7 @@ import alteraa.entities.*;
 
 @Override
 public class AlteraaUnitType extends UnitType{
-    public int ringCount = 8
+    public int ringCount = 8;
     public float wormLength = 10, wormBalancement = 0.5f;
     public TextureRegion baseRegion, legRegion, region, shadowRegion, cellRegion,
         softShadowRegion, jointRegion, footRegion, legBaseRegion, baseJointRegion, headRegion, ringRegion, ringEndRegion, clawRegion, outlineRegion;
@@ -63,28 +63,26 @@ public class AlteraaUnitType extends UnitType{
     public void drawMech(Mechc mech){
         Unit unit = (Unit)mech;
 
-        int baliseNumber = 0
-        baliseNumber = baliseNumber + 1
+        int baliseNumber = 0;
+        baliseNumber = baliseNumber + 1;
 
         public void balise(unit.x, unit.y);
 
-        balise() = new balise[baliseNumber]
+        balise() = new balise[baliseNumber];
 
 
         if(floor.isLiquid){
             Draw.color(Color.white, floor.mapColor, 0.5f);
         }
 
-        Draw.rect(headRegion, unit.x, unit.y)
+        Draw.rect(headRegion, unit.x, unit.y);
 
 
         for(int i = ringCount){
             Draw.rect(ringRegion,
             unit.x,
-            unit.y + i * ringCount)
+            unit.y + i * ringCount);
 
-            if ringRegion(x, y) = balise(x, y){
-                Draw.rect(ringRegion,
             }
         }
 
