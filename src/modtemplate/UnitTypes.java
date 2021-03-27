@@ -16,7 +16,7 @@ import mindustry.world.meta.*;
 import static mindustry.Vars.*;
 
 @Override
-public class AlteraaUnitTypes implements UnitTypes{
+public class AlteraaUnitTypes extends UnitTypes{
     //region definitions
 
     //worm

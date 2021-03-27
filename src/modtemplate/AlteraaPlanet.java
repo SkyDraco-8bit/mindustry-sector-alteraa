@@ -8,7 +8,7 @@ import mindustry.graphics.g3d.*;
 import mindustry.type.*;
 import alteraa.maps.planets.*;
 
-public class VanillaPlanets implements ContentList{
+public class AlteraaPlanets implements ContentList{
     public static Planet
     cuantum, cuantumStar, nortum,
     xariex;
