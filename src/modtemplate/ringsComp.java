@@ -1,5 +1,4 @@
-
-package mindustry.entities.comp;
+package alteraa.entities.comp;
 
 import arc.math.*;
 import arc.math.geom.*;
@@ -15,12 +14,12 @@ import mindustry.graphics.*;
 import mindustry.type.*;
 import mindustry.world.blocks.environment.*;
 
+import alteraa.content.*;
 
 @Component
 abstract class ringsComp implements Posc, Rotc, Hitboxc, Flyingc, Unitc{
   @Import float x, y;
   @Import unitType type;
-  @Import wormLength, wormBalancement, ringBalancement, ringCount;
   
   transient Ring[] = ring = {};
   
@@ -32,18 +31,33 @@ abstract class ringsComp implements Posc, Rotc, Hitboxc, Flyingc, Unitc{
     this.ring = new Ring[Count];
     float ringSpacement = wormLenght/ringCount;
     
-    for(int i = 0){
+    for(int i = ringCount ){
       
-      Ring 1 = new Ring();
-      
-      rings[i] = 1;
+      Ring 1 = new Ring(x, y - i * ringSpacement);
+
     }
-    
-    @Override
-    public void update(){
-      
-      int headx = 
-      
-      
   }
+    
+  @Override
+  public void update(){
+        //make the head move like a naval unit
+
+
+
+        if ring(x, y) = balisei(X, Y){
+            ringRot = balise(headRot);
+
+        }
+
+        if EndRing(x, y) = balisei(X, Y){
+            EndRingRot = balisei(headRot);
+            clear balisei;
+        }
+
+    }
+  }
+
+
+
+
   

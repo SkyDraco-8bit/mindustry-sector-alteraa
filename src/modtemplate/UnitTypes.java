@@ -1,5 +1,5 @@
 
-package mindustry.content;
+package alteraa.content;
 
 import arc.graphics.*;
 import arc.struct.*;

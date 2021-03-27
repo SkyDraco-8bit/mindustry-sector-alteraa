@@ -1,5 +1,5 @@
   
-package mindustry.entities;
+package alteraa.entities;
 
 import arc.math.geom.*;
 
